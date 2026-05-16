@@ -77,9 +77,9 @@ export default function Home() {
               "何度内観しても、同じ場所で止まる気がする",
               "内観しても、結局、身体の奥の不安が消えないし現実変わらない",
             ].map((text, i) => (
-              <li key={i} className="flex gap-4 text-ink/90 leading-loose">
+              <li key={i} className="flex gap-4 leading-loose">
                 <span className="text-gold flex-shrink-0 mt-1">—</span>
-                <span>{text}</span>
+                <span className="text-ink">{text}</span>
               </li>
             ))}
           </ul>
@@ -325,9 +325,9 @@ export default function Home() {
                 <h3 className="font-serif text-deep text-xl md:text-2xl font-medium mb-8 leading-relaxed">
                   {step.title}
                 </h3>
-                <div className="space-y-4 leading-loose text-ink/90 mb-6">
+                <div className="space-y-4 leading-loose mb-6">
                   {step.body.map((line, j) => (
-                    <p key={j}>{line}</p>
+                    <p key={j} className="text-ink">{line}</p>
                   ))}
                 </div>
                 <p className="font-serif text-deep font-medium leading-relaxed">
@@ -374,9 +374,9 @@ export default function Home() {
                 "全ての感情をジャッジしないワーク",
                 "潜在意識にアクセスするためにまずは感情を感じること",
               ].map((text, i) => (
-                <li key={i} className="flex gap-3 text-ink/90 leading-loose text-sm md:text-base">
+                <li key={i} className="flex gap-3 leading-loose text-sm md:text-base">
                   <span className="text-gold flex-shrink-0 mt-1">—</span>
-                  <span>{text}</span>
+                  <span className="text-ink">{text}</span>
                 </li>
               ))}
             </ul>
@@ -392,9 +392,9 @@ export default function Home() {
                 "自分一人で潜り直すための実践方法",
                 "自己一致とは何か、どうやって自己一致し続けるのか",
               ].map((text, i) => (
-                <li key={i} className="flex gap-3 text-ink/90 leading-loose text-sm md:text-base">
+                <li key={i} className="flex gap-3 leading-loose text-sm md:text-base">
                   <span className="text-gold flex-shrink-0 mt-1">—</span>
-                  <span>{text}</span>
+                  <span className="text-ink">{text}</span>
                 </li>
               ))}
             </ul>
@@ -422,9 +422,9 @@ export default function Home() {
                 "止まってしまった場所を、一緒に解剖してほしい",
                 "出てきた感情の意味が、わからない",
               ].map((text, i) => (
-                <li key={i} className="flex gap-3 text-ink/90 leading-loose">
+                <li key={i} className="flex gap-3 leading-loose">
                   <span className="text-gold flex-shrink-0 mt-1">—</span>
-                  <span>{text}</span>
+                  <span className="text-ink">{text}</span>
                 </li>
               ))}
             </ul>
@@ -473,9 +473,9 @@ export default function Home() {
                 "占いや誰かに「答え」をもらいたくなっていた",
                 "気づきはあっても、現実が動かなかった",
               ].map((text, i) => (
-                <li key={i} className="flex gap-3 text-soft leading-loose">
-                  <span className="flex-shrink-0 mt-1">—</span>
-                  <span>{text}</span>
+                <li key={i} className="flex gap-3 leading-loose">
+                  <span className="text-soft flex-shrink-0 mt-1">—</span>
+                  <span className="text-soft">{text}</span>
                 </li>
               ))}
             </ul>
@@ -500,9 +500,9 @@ export default function Home() {
                 "自己一致し続ける意味がわかり実践できるようになっている",
                 "深く自分を愛する喜びを追求したくなる（勝手に引き寄せが起きるフェーズですね）",
               ].map((text, i) => (
-                <li key={i} className="flex gap-3 text-deep font-medium leading-loose">
+                <li key={i} className="flex gap-3 leading-loose">
                   <span className="text-gold flex-shrink-0 mt-1">—</span>
-                  <span>{text}</span>
+                  <span className="text-deep font-medium">{text}</span>
                 </li>
               ))}
             </ul>
@@ -534,7 +534,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="space-y-4 leading-loose text-ink/90">
+          <div className="space-y-4 leading-loose text-ink">
             <p>セラピスト、コーチ、カウンセラー、</p>
             <p>あるいは、ただ目の前の家族や友人を助けたいだけだとしても。</p>
             <p>自分を導けない人は、人を導けません。</p>
@@ -660,7 +660,7 @@ export default function Home() {
             ].map((text, i) => (
               <li key={i} className="flex gap-4 leading-loose">
                 <span className="text-gold flex-shrink-0 mt-1 font-bold">✓</span>
-                <span>{text}</span>
+                <span className="text-ink">{text}</span>
               </li>
             ))}
           </ul>
@@ -679,9 +679,9 @@ export default function Home() {
               "個別チャットを「カウンセリング代わり」に使いたい方",
               "現在、精神科・心療内科で治療中の方（まずは心身の安定が最優先です）",
             ].map((text, i) => (
-              <li key={i} className="flex gap-4 leading-loose text-soft">
-                <span className="flex-shrink-0 mt-1">×</span>
-                <span>{text}</span>
+              <li key={i} className="flex gap-4 leading-loose">
+                <span className="text-soft flex-shrink-0 mt-1">×</span>
+                <span className="text-soft">{text}</span>
               </li>
             ))}
           </ul>
@@ -937,7 +937,7 @@ export default function Home() {
                   <span className="text-gold mr-2">Q.</span>
                   {item.q}
                 </p>
-                <p className="leading-loose text-ink/90">
+                <p className="leading-loose text-ink">
                   <span className="text-gold mr-2">A.</span>
                   {item.a}
                 </p>
