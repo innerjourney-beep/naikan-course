@@ -1,26 +1,6 @@
-"use client";
-
-import { useEffect } from "react";
-
-// ===== 仮申し込みリンク（後でGoogle Formに差し替え）=====
-const APPLY_URL = "#";
+const APPLY_URL = "https://forms.gle/KoC25Gw3dQ23xRes8";
 
 export default function Home() {
-  // スクロールでフェードイン
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <main className="bg-base text-ink">
@@ -43,23 +23,23 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <p className="number-label mb-12 animate-fade-in">— 0期生プログラム —</p>
+          <p className="number-label mb-12">— 0期生プログラム —</p>
 
-          <h1 className="font-serif font-medium text-deep mb-10 leading-relaxed animate-fade-up" style={{ fontSize: "clamp(28px, 6vw, 52px)" }}>
+          <h1 className="font-serif font-medium text-deep mb-10 leading-relaxed" style={{ fontSize: "clamp(28px, 6vw, 52px)" }}>
             もう、自分の感覚に
             <br />
             嘘をつかない。
           </h1>
 
-          <p className="text-lg md:text-xl text-ink/80 leading-loose mb-12 animate-fade-up" style={{ animationDelay: "0.3s", opacity: 0 }}>
+          <p className="text-lg md:text-xl text-ink/80 leading-loose mb-12">
             自己一致し、
             <br className="md:hidden" />
             内観を一生使える技術にする3ヶ月。
           </p>
 
-          <div className="gold-divider animate-fade-in" style={{ animationDelay: "0.6s", opacity: 0 }}></div>
+          <div className="gold-divider"></div>
 
-          <p className="font-serif text-mist tracking-widest animate-fade-in mb-12" style={{ animationDelay: "0.9s", opacity: 0 }}>
+          <p className="font-serif text-mist tracking-widest mb-12">
             ブロック外しセラピスト
             <br />
             <span className="text-deep">なるいまい</span>
@@ -67,22 +47,21 @@ export default function Home() {
 
           <a
             href="#apply"
-            className="cta-button inline-block bg-terracotta text-paper px-12 py-4 rounded-sm font-medium tracking-wider hover:bg-terracottaDark animate-fade-in"
-            style={{ animationDelay: "1.2s", opacity: 0 }}
+            className="cta-button inline-block bg-terracotta text-paper px-12 py-4 rounded-sm font-medium tracking-wider hover:bg-terracottaDark"
           >
             詳細を見る
           </a>
         </div>
 
         {/* 下スクロール指示 */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "1.5s", opacity: 0 }}>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
           <div className="w-px h-12 bg-gold/40 mx-auto"></div>
         </div>
       </section>
 
       {/* ==================== セクション2：共感パート ==================== */}
       <section className="px-6 py-24 md:py-32">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6">— 01 —</p>
           <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-12 leading-relaxed">
             こんな状態の自分に、
@@ -121,7 +100,7 @@ export default function Home() {
 
       {/* ==================== セクション3：問題提起 ==================== */}
       <section className="px-6 py-24 md:py-32 bg-paper section-fade">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6">— 02 —</p>
           <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-16 leading-relaxed">
             なぜ、内観は
@@ -217,7 +196,7 @@ export default function Home() {
 
       {/* ==================== セクション4：解決の方向性 ==================== */}
       <section className="px-6 py-24 md:py-32">
-        <div className="max-w-2xl mx-auto reveal text-center">
+        <div className="max-w-2xl mx-auto text-center">
           <p className="number-label mb-6">— 03 —</p>
           <h2 className="font-serif text-deep text-3xl md:text-4xl font-medium mb-16 leading-relaxed">
             内観を、
@@ -279,7 +258,7 @@ export default function Home() {
 
       {/* ==================== セクション5：メソッド紹介 ==================== */}
       <section className="px-6 py-24 md:py-32 bg-paper section-fade">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6 text-center">— 04 —</p>
           <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-8 leading-relaxed text-center">
             内観を技術にする、
@@ -362,7 +341,7 @@ export default function Home() {
 
       {/* ==================== セクション6：講座内容 ==================== */}
       <section className="px-6 py-24 md:py-32">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6 text-center">— 05 —</p>
           <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-16 leading-relaxed text-center">
             3ヶ月で、
@@ -475,7 +454,7 @@ export default function Home() {
 
       {/* ==================== セクション7：3ヶ月後の変化 ==================== */}
       <section className="px-6 py-24 md:py-32 bg-paper section-fade">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6 text-center">— 06 —</p>
           <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-20 leading-relaxed text-center">
             3ヶ月後、
@@ -566,7 +545,7 @@ export default function Home() {
 
       {/* ==================== セクション8：ストーリー ==================== */}
       <section className="px-6 py-24 md:py-32">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6 text-center">— 07 —</p>
           <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-16 leading-relaxed text-center">
             私が、
@@ -576,9 +555,12 @@ export default function Home() {
 
           {/* プロフィール写真プレースホルダー */}
           <div className="flex flex-col items-center mb-16">
-            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-mist/30 to-gold/30 flex items-center justify-center mb-6 border border-gold/30">
-              <span className="font-serif text-3xl text-deep tracking-widest">N.M</span>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/profile.jpg"
+              alt="なるいまい"
+              className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover object-top mb-6 border border-gold/30"
+            />
             <p className="font-serif text-mist tracking-widest text-sm">ブロック外しセラピスト</p>
             <p className="font-serif text-deep text-lg mt-2">なるいまい</p>
           </div>
@@ -658,7 +640,7 @@ export default function Home() {
 
       {/* ==================== セクション9：こんな方へ ==================== */}
       <section className="px-6 py-24 md:py-32 bg-paper section-fade">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6 text-center">— 08 —</p>
 
           {/* こんな方のための */}
@@ -708,7 +690,7 @@ export default function Home() {
 
       {/* ==================== セクション10：価格 ==================== */}
       <section className="px-6 py-24 md:py-32">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6 text-center">— 09 —</p>
           <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-16 leading-relaxed text-center">
             本来、この内容を
@@ -861,7 +843,7 @@ export default function Home() {
 
       {/* ==================== セクション11：正直な約束 ==================== */}
       <section className="px-6 py-24 md:py-32 bg-paper section-fade">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6 text-center">— 10 —</p>
           <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-16 leading-relaxed text-center">
             なぜ、この価格にしたのか。
@@ -917,7 +899,7 @@ export default function Home() {
 
       {/* ==================== セクション12：FAQ ==================== */}
       <section className="px-6 py-24 md:py-32">
-        <div className="max-w-2xl mx-auto reveal">
+        <div className="max-w-2xl mx-auto">
           <p className="number-label mb-6 text-center">— 11 —</p>
           <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-16 leading-relaxed text-center">
             よくあるご質問
@@ -967,7 +949,7 @@ export default function Home() {
 
       {/* ==================== セクション13：最終CTA ==================== */}
       <section id="apply" className="px-6 py-24 md:py-32 bg-paper section-fade">
-        <div className="max-w-2xl mx-auto reveal text-center">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-serif text-deep font-medium mb-16 leading-relaxed" style={{ fontSize: "clamp(28px, 6vw, 44px)" }}>
             あなたの感覚は、
             <br />
