@@ -717,7 +717,7 @@ export default function Home() {
 
             <div className="text-center">
               <p className="font-serif text-deep mb-4">世の中で開催されている「潜在意識の書き換え講座」</p>
-              <p className="font-serif text-3xl md:text-4xl font-medium text-gold mb-3">800,000円 以上</p>
+              <p className="font-serif text-3xl md:text-4xl font-medium text-gold mb-3">80万円 以上</p>
               <p className="text-sm text-ink/70">潜在意識の書き換えに特化した自己啓発系の講座は、相場としてこの価格帯です。</p>
             </div>
 
@@ -725,7 +725,7 @@ export default function Home() {
 
             <div className="text-center">
               <p className="font-serif text-deep mb-4">感情に特化した講座（単体）</p>
-              <p className="font-serif text-3xl md:text-4xl font-medium text-gold mb-3">100,000円 前後</p>
+              <p className="font-serif text-3xl md:text-4xl font-medium text-gold mb-3">10万円 前後</p>
               <p className="text-sm text-ink/70">感情の代謝・扱い方を体系的に学べる講座は、これくらいの価格帯が一般的です。</p>
             </div>
           </div>
