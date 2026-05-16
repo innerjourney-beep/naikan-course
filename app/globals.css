@@ -1,0 +1,461 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --base: #FBFAF7;
+  --paper: #FFFFFF;
+  --ink: #2C3E50;
+  --deep: #1B3A57;
+  --mist: #7B9AAE;
+  --terracotta: #E07856;
+  --terracotta-dark: #C56342;
+  --gold: #B8956A;
+  --soft: #888888;
+  --line: #E8E4DC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: var(--base);
+  color: var(--ink);
+  line-height: 1.9;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 768px) {
+  body { font-size: 18px; }
+}
+
+h1, h2, h3 {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  color: var(--deep);
+  line-height: 1.6;
+}
+
+.font-serif { font-family: 'Noto Serif JP', serif; }
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  section { padding: 8rem 1.5rem; }
+}
+
+/* --- Number label --- */
+.number-label {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  font-size: 0.875rem;
+}
+
+/* --- Gold divider --- */
+.gold-divider {
+  position: relative;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 3rem auto;
+  max-width: 200px;
+}
+.gold-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  background-color: var(--gold);
+  opacity: 0.5;
+}
+
+/* --- CTA button --- */
+.cta-button {
+  display: inline-block;
+  background-color: var(--terracotta);
+  color: var(--paper);
+  padding: 1rem 3rem;
+  border-radius: 2px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.cta-button:hover {
+  background-color: var(--terracotta-dark);
+}
+.cta-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s ease;
+}
+.cta-button:hover::after {
+  left: 100%;
+}
+
+/* --- Scroll reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Dash list --- */
+ul.dash-list {
+  list-style: none;
+  padding: 0;
+}
+ul.dash-list li {
+  display: flex;
+  gap: 1rem;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+ul.dash-list li::before {
+  content: '—';
+  color: var(--gold);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+/* --- Quote block --- */
+.quote-block {
+  padding-left: 1.5rem;
+  border-left: 2px solid rgba(184, 149, 106, 0.4);
+  margin: 3rem 0;
+  font-family: 'Noto Serif JP', serif;
+  font-style: italic;
+  color: rgba(44, 62, 80, 0.8);
+}
+.quote-block p {
+  margin-bottom: 0.75rem;
+}
+.quote-block-mist {
+  border-left-color: rgba(123, 154, 174, 0.4);
+}
+
+/* --- Structure box --- */
+.structure-box {
+  margin: 5rem 0;
+  padding: 3rem 2rem;
+  background-color: var(--base);
+  border-top: 1px solid rgba(184, 149, 106, 0.2);
+  border-bottom: 1px solid rgba(184, 149, 106, 0.2);
+}
+.structure-box p.label {
+  text-align: center;
+  color: var(--soft);
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.15em;
+}
+.structure-item {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.structure-item.strong {
+  color: var(--deep);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.structure-arrow {
+  color: var(--gold);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* --- Step blocks --- */
+.step-block {
+  border-left: 2px solid rgba(184, 149, 106, 0.3);
+  padding-left: 2rem;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .step-block { padding-left: 3rem; }
+}
+.step-label {
+  font-family: 'Noto Serif JP', serif;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+.step-title {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  color: var(--deep);
+}
+@media (min-width: 768px) {
+  .step-title { font-size: 1.5rem; }
+}
+.step-body p {
+  margin-bottom: 1rem;
+  line-height: 1.9;
+}
+.step-emphasis {
+  font-family: 'Noto Serif JP', serif;
+  color: var(--deep);
+  font-weight: 500;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+}
+
+/* --- Typography scale --- */
+.hero-title {
+  font-size: 32px;
+  line-height: 1.5;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  color: var(--deep);
+}
+@media (min-width: 768px) {
+  .hero-title { font-size: 52px; }
+}
+
+.hero-sub {
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  .hero-sub { font-size: 1.25rem; }
+}
+
+.section-h2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .section-h2 { font-size: 1.875rem; }
+}
+
+.section-h2-big {
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  .section-h2-big { font-size: 2.25rem; }
+}
+
+.strong-line {
+  font-size: 1.25rem;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  color: var(--deep);
+}
+@media (min-width: 768px) {
+  .strong-line { font-size: 1.5rem; }
+}
+
+/* --- Course items --- */
+.course-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.course-item:first-child {
+  border-top: 1px solid var(--line);
+}
+.course-item__icon {
+  font-family: 'Noto Serif JP', serif;
+  color: var(--gold);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  line-height: 1.8;
+}
+.course-item__text h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.course-item__text p {
+  font-size: 0.9375rem;
+  color: rgba(44, 62, 80, 0.7);
+  line-height: 1.7;
+}
+
+/* --- Profile photo --- */
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid rgba(184, 149, 106, 0.4);
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+/* --- Change items --- */
+.change-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.change-item__number {
+  font-family: 'Noto Serif JP', serif;
+  color: var(--gold);
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 0.25rem;
+}
+.change-item__text h3 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--deep);
+  margin-bottom: 0.5rem;
+}
+.change-item__text p {
+  color: rgba(44, 62, 80, 0.75);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+/* --- Bonus items --- */
+.bonus-item {
+  padding: 2rem;
+  background: var(--paper);
+  border: 1px solid rgba(184, 149, 106, 0.2);
+  margin-bottom: 1.5rem;
+  border-radius: 2px;
+}
+.bonus-label {
+  font-family: 'Noto Serif JP', serif;
+  color: var(--gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.75rem;
+}
+.bonus-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  color: var(--deep);
+  font-size: 1.0625rem;
+  margin-bottom: 0.5rem;
+}
+.bonus-desc {
+  color: rgba(44, 62, 80, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* --- Price box --- */
+.price-box {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--paper);
+  border: 1px solid rgba(184, 149, 106, 0.3);
+  margin: 3rem 0;
+}
+.price-label {
+  font-family: 'Noto Serif JP', serif;
+  color: var(--gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 1.5rem;
+}
+.price-amount {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: var(--deep);
+  letter-spacing: 0.05em;
+}
+.price-note {
+  color: var(--soft);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+/* --- FAQ --- */
+.faq-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.faq-item:first-child {
+  border-top: 1px solid var(--line);
+}
+.faq-q {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  color: var(--deep);
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.faq-q::before {
+  content: 'Q.';
+  color: var(--gold);
+  flex-shrink: 0;
+}
+.faq-a {
+  color: rgba(44, 62, 80, 0.8);
+  line-height: 1.9;
+  padding-left: 2rem;
+}
+
+/* --- Footer --- */
+footer {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  background: var(--base);
+}
+
+/* --- Utilities --- */
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.italic      { font-style: italic; }
+.font-medium { font-weight: 500; }
+.tracking-widest { letter-spacing: 0.15em; }
+.tracking-wider  { letter-spacing: 0.1em; }
+
+.mb-3  { margin-bottom: 0.75rem; }
+.mb-4  { margin-bottom: 1rem; }
+.mb-6  { margin-bottom: 1.5rem; }
+.mb-8  { margin-bottom: 2rem; }
+.mb-10 { margin-bottom: 2.5rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mb-16 { margin-bottom: 4rem; }
+.mb-20 { margin-bottom: 5rem; }
+.mt-2  { margin-top: 0.5rem; }
+.mt-4  { margin-top: 1rem; }
+.mt-6  { margin-top: 1.5rem; }
+.my-8  { margin-top: 2rem;  margin-bottom: 2rem; }
+.my-12 { margin-top: 3rem;  margin-bottom: 3rem; }
+.my-16 { margin-top: 4rem;  margin-bottom: 4rem; }
