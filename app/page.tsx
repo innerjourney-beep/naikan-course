@@ -62,8 +62,8 @@ export default function Home() {
       {/* ==================== セクション2：共感パート ==================== */}
       <section className="px-6 py-24 md:py-32">
         <div className="max-w-2xl mx-auto">
-          <p className="number-label mb-6">— 01 —</p>
-          <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-12 leading-relaxed">
+          <p className="number-label mb-6 text-center">— 01 —</p>
+          <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-12 leading-relaxed text-center">
             こんな状態の自分に、
             <br />
             心当たりはありませんか。
@@ -101,8 +101,8 @@ export default function Home() {
       {/* ==================== セクション3：問題提起 ==================== */}
       <section className="px-6 py-24 md:py-32 bg-paper section-fade">
         <div className="max-w-2xl mx-auto">
-          <p className="number-label mb-6">— 02 —</p>
-          <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-16 leading-relaxed">
+          <p className="number-label mb-6 text-center">— 02 —</p>
+          <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-16 leading-relaxed text-center">
             なぜ、内観は
             <br />
             途中で止まるのか。
