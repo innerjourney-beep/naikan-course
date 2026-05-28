@@ -667,24 +667,33 @@ export default function Home() {
 
           <div className="gold-divider"></div>
 
-          {/* ご遠慮ください */}
-          <h2 className="font-serif text-soft text-2xl md:text-3xl font-medium mb-12 mt-20 leading-relaxed text-center">
-            こんな方はご遠慮ください
+          {/* 自己選別セクション */}
+          <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-4 mt-20 leading-relaxed text-center">
+            この講座は、
+            <br />
+            こういう方のための場です
           </h2>
-          <ul className="space-y-5">
+          <p className="text-center text-ink/70 leading-loose mb-12">
+            来てほしい方に、正直にお伝えします。
+          </p>
+          <ul className="space-y-6">
             {[
-              "「答えを誰かに教えてほしい」と他者依存したい方",
-              "短期間で劇的な変化だけを期待する方",
-              "自分のネガティブ感情に向き合う覚悟がまだ整っていない方",
-              "個別チャットを「カウンセリング代わり」に使いたい方",
-              "現在、精神科・心療内科で治療中の方（まずは心身の安定が最優先です）",
+              "答えを外に探すのをやめて、自分の感覚を信じる訓練をしたい方",
+              "3ヶ月という時間をかけて、じっくり自分の内側に向き合い続けることを選べる方",
+              "ネガティブな感情も含めて、自分のすべてと向き合う覚悟を持って来てくれる方",
+              "個別チャットを「答えをもらう場」ではなく、自分の内観を深めるための補助として使える方",
+              "心身が安定した状態で、深く自分と向き合える準備が整っている方（現在、精神科・心療内科での治療中の方は、まず心身の安定を最優先にしてください）",
             ].map((text, i) => (
               <li key={i} className="flex gap-4 leading-loose">
-                <span className="text-soft flex-shrink-0 mt-1">×</span>
-                <span className="text-soft">{text}</span>
+                <span className="text-gold flex-shrink-0 mt-1">—</span>
+                <span className="text-ink">{text}</span>
               </li>
             ))}
           </ul>
+          <p className="mt-10 leading-loose text-ink/70">
+            この5つに、自分を重ねてみてください。<br />
+            「ここに来ていい」と感じた方を、私は待っています。
+          </p>
         </div>
       </section>
 
@@ -770,25 +779,42 @@ export default function Home() {
           </div>
 
           {/* セッション特典ボックス */}
-          <div className="border-y-2 border-gold/40 py-12 px-6 my-16 bg-base">
-            <h3 className="font-serif text-gold text-xl md:text-2xl font-medium mb-8 leading-relaxed text-center tracking-wide">
+          <div className="border-2 border-gold/50 py-14 px-8 my-16 bg-base">
+            <p className="text-center text-gold tracking-widest text-sm mb-4 font-serif">特典</p>
+            <h3 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-6 leading-relaxed text-center">
               ブロック外しセッション
               <br />
-              1回分を特別に
+              1回付き
             </h3>
-            <div className="space-y-5 leading-loose">
-              <p>私のブロック外しセッションは、</p>
-              <p className="font-medium text-deep">
-                普段は <span className="text-gold">3回コース（264,000円）</span> でのみ提供しています。
+            <div className="gold-divider"></div>
+            <div className="space-y-5 leading-loose mt-8">
+              <p className="font-serif text-deep font-medium text-lg md:text-xl leading-relaxed">
+                「一人で申し込んで、いきなり自分で潜っていく」
+                <br />
+                それが重いと感じる方へ。
               </p>
-              <p>単発でのお申し込みは、現在受け付けていません。</p>
-              <p>そして今後も、単発での販売予定はありません。</p>
-              <p>その「3回コースでしか手に入らないセッション」を、</p>
-              <p>0期生のあなたには、1回分を特別に組み込みます。</p>
-              <p className="pt-4 text-sm text-ink/80">
-                講座開始後、サポート期間内、お好きなタイミングで個別セッションを受けていただけます。
-                「自分のブロックを、なるいまいに直接見てほしい」
-                そんなあなたを、一対一でサポートします。
+              <p>
+                この講座には、ブロック外しセッションが1回ついてきます。
+              </p>
+              <p className="font-medium text-deep">
+                まず私と一対一で向き合って、あなたの内側に何があるかを一緒に見る。
+                <br />
+                その体験を土台にして、3ヶ月の講座を歩いていけます。
+              </p>
+              <p>
+                いきなり一人で潜るのではなく、<br />
+                まず私と一緒にブロックを外してから——<br />
+                その後の自己一致を、講座で続けていく。
+              </p>
+              <div className="border-t border-gold/20 pt-6 mt-4 space-y-3">
+                <p className="font-medium text-deep">
+                  私のブロック外しセッションは、普段は <span className="text-gold">3回コース（264,000円）</span> でのみ提供しています。
+                </p>
+                <p>単発での一般募集は、現在も今後も行いません。</p>
+                <p>その「通常は一般販売していないセッション」が、この講座に付いています。</p>
+              </div>
+              <p className="text-sm text-ink/70 pt-2">
+                講座開始後、サポート期間内、お好きなタイミングで日程を調整します。
               </p>
             </div>
           </div>
@@ -827,16 +853,41 @@ export default function Home() {
 
           <div className="gold-divider"></div>
 
-          {/* 募集人数 */}
-          <div className="text-center mt-16 mb-8">
-            <p className="number-label mb-6">— 募集人数 —</p>
-            <p className="font-serif font-medium text-deep mb-8" style={{ fontSize: "clamp(36px, 8vw, 56px)" }}>
-              先着 5名
-            </p>
-            <div className="space-y-2 leading-loose">
-              <p>0期生として、私と密度高くやりとりできる人数を、5名に限定します。</p>
-              <p>埋まり次第、募集を終了します。</p>
+          {/* 締切・募集人数 */}
+          <div className="mt-16 mb-8">
+            <div className="text-center border-y-2 border-terracotta/40 py-12 px-6">
+              <p className="number-label mb-6">— 0期生募集締切 —</p>
+              <p className="font-serif font-medium text-deep mb-2" style={{ fontSize: "clamp(28px, 6vw, 44px)" }}>
+                5月31日（土）まで
+              </p>
+              <p className="font-serif text-2xl md:text-3xl font-medium text-terracotta mt-2 mb-8">
+                特別価格 149,000円
+              </p>
+
+              <div className="text-left space-y-4 leading-loose max-w-md mx-auto mb-10">
+                <p className="font-medium text-deep">6月1日以降、2つのことが変わります。</p>
+                <ul className="space-y-3 mt-2">
+                  <li className="flex gap-3">
+                    <span className="text-terracotta flex-shrink-0 mt-1">—</span>
+                    <span className="text-ink">価格が <strong>169,000円</strong> に上がります（20,000円の差）</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-terracotta flex-shrink-0 mt-1">—</span>
+                    <span className="text-ink">「0期生」として、私と一緒に講座を作っていく機会が終了します</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="border-t border-line pt-8 text-left max-w-md mx-auto space-y-3 leading-loose">
+                <p className="font-serif text-deep font-medium">0期生だけの特別価格 149,000円と、</p>
+                <p className="font-serif text-deep font-medium">「仲間として講座を一緒に作る」体験は——</p>
+                <p className="text-terracotta font-medium">5月31日で終わります。</p>
+              </div>
             </div>
+
+            <p className="text-center text-ink/70 leading-loose mt-8">
+              先着5名。定員に達した時点で、募集を終了します。
+            </p>
           </div>
         </div>
       </section>
@@ -882,8 +933,7 @@ export default function Home() {
               <p>期間は3ヶ月とお約束しますが、必要に応じて延長することもあります。</p>
               <p>私自身も、やりながら、最善の形を探っていきます。</p>
               <p>その分、価格は0期生だけの特別価格に設定しました。</p>
-              <p>ブロック外しセッションを組み込めるのも、0期生限りの特典です。</p>
-              <p>次期以降は、価格は198,000円に戻し、ブロック外しセッションの特典も外れる予定です。</p>
+              <p>次期以降は、価格は198,000円に戻る予定です。</p>
             </div>
 
             <div className="border-t border-line my-12"></div>
@@ -979,11 +1029,21 @@ export default function Home() {
             <p>として歩いていくあなたを、私は0期生として、全力でサポートします。</p>
           </div>
 
+          <div className="my-10 text-left border-l-2 border-gold/30 pl-6 space-y-3 leading-loose">
+            <p className="text-ink">
+              読んでみて、まだ迷いや質問がある方は、申し込む前にこちらのメールアドレスにそのままご連絡ください。
+            </p>
+            <p className="text-ink">
+              全てのメールに、私が直接お返事しています。
+            </p>
+            <p className="font-mono text-deep font-medium">info@narui.my</p>
+          </div>
+
           <a
             href={APPLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="cta-button inline-block bg-terracotta text-paper px-16 py-5 rounded-sm font-medium tracking-widest hover:bg-terracottaDark text-lg md:text-xl my-12"
+            className="cta-button inline-block bg-terracotta text-paper px-16 py-5 rounded-sm font-medium tracking-widest hover:bg-terracottaDark text-lg md:text-xl my-8"
           >
             0期生に申し込む
           </a>
