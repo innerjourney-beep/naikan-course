@@ -858,7 +858,7 @@ export default function Home() {
             <div className="text-center border-y-2 border-terracotta/40 py-12 px-6">
               <p className="number-label mb-6">— 0期生募集締切 —</p>
               <p className="font-serif font-medium text-deep mb-2" style={{ fontSize: "clamp(28px, 6vw, 44px)" }}>
-                5月31日（土）まで
+                5月31日（日）まで
               </p>
               <p className="font-serif text-2xl md:text-3xl font-medium text-terracotta mt-2 mb-8">
                 特別価格 149,000円
@@ -1039,14 +1039,9 @@ export default function Home() {
             <p className="font-mono text-deep font-medium">info@narui.my</p>
           </div>
 
-          <a
-            href={APPLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button inline-block bg-terracotta text-paper px-16 py-5 rounded-sm font-medium tracking-widest hover:bg-terracottaDark text-lg md:text-xl my-8"
-          >
-            0期生に申し込む
-          </a>
+          <div className="inline-block bg-soft text-paper px-16 py-5 rounded-sm font-medium tracking-widest text-lg md:text-xl my-8 cursor-default">
+            満席につき終了
+          </div>
 
           <div className="text-sm text-ink/80 space-y-2 mt-8">
             <p>先着5名 / ブロック外しセッション1回分付き / 149,000円（税込）</p>
