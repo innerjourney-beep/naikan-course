@@ -616,7 +616,7 @@ export default function Home() {
               href="https://flax-poultry-53a.notion.site/30c4cc699b08800891c2edc8236c2172"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gold underline underline-offset-4 tracking-wide text-sm"
+              className="text-gold underline underline-offset-4 tracking-wide text-base font-medium"
             >
               ▼ もっと多くの声はこちら
             </a>
@@ -938,7 +938,7 @@ export default function Home() {
             <h3 className="font-serif text-deep text-xl md:text-2xl font-medium mb-8 leading-relaxed">
               通常価格は、298,000円。
             </h3>
-            <div className="space-y-4 leading-loose text-left">
+            <div className="space-y-4 leading-loose text-center">
               <p>100万円相当の内容を、約30万円に圧縮した時点で、すでに破格です。</p>
               <p>でも——</p>
             </div>
@@ -964,7 +964,7 @@ export default function Home() {
               「もっと早く出会いたかった」<br />
               「20年抱えていたものが、外れました」
             </p>
-            <p className="text-ink/70 text-sm leading-loose">——これ、特典のブロック外しセッション<em>"だけ"</em>の威力です。</p>
+            <p className="font-serif text-deep font-medium text-lg md:text-xl leading-relaxed">——これ、特典のブロック外しセッション<em>"だけ"</em>の威力です。</p>
           </div>
         </div>
       </section>
