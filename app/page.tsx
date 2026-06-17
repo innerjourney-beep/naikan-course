@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <p className="number-label mb-12">— プログラム —</p>
+          <p className="number-label mb-12">— 自己一致内観講座 —</p>
 
           <h1 className="font-serif font-medium text-deep mb-10 leading-relaxed" style={{ fontSize: "clamp(28px, 6vw, 52px)" }}>
             もう、自分の感覚に
