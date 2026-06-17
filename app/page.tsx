@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <p className="number-label mb-12">— 0期生プログラム —</p>
+          <p className="number-label mb-12">— プログラム —</p>
 
           <h1 className="font-serif font-medium text-deep mb-10 leading-relaxed" style={{ fontSize: "clamp(28px, 6vw, 52px)" }}>
             もう、自分の感覚に
@@ -32,9 +32,9 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-ink/80 leading-loose mb-12">
-            自己一致し、
+            ブロックを外し自己一致した内観を
             <br className="md:hidden" />
-            内観を一生使える技術にする3ヶ月。
+            一生使える技術にする3か月
           </p>
 
           <div className="gold-divider"></div>
@@ -72,10 +72,13 @@ export default function Home() {
           <ul className="space-y-6 mb-16">
             {[
               "内観のやり方はわかってきた。でも一人でやると「これで合ってるのかな」が消えない",
-              "ワークをやって、気づきもあった。なのに、体感が変わらない",
               "ブロックを見つけたところで、なぜか先に進めない瞬間がある",
               "何度内観しても、同じ場所で止まる気がする",
               "内観しても、結局、身体の奥の不安が消えないし現実変わらない",
+              "内観の大切さは知っているのに、現実が変わらない焦りがある",
+              "「自分を愛する」が、正直よくわからない",
+              "何があっても自分を守り、現実を動かす強さ・精神力の付け方がわからない",
+              "たくさん学んできたのに、もう何を学べば現実が変わるのかわからず、身動きが取れない",
             ].map((text, i) => (
               <li key={i} className="flex gap-4 leading-loose">
                 <span className="text-gold flex-shrink-0 mt-1">—</span>
@@ -440,8 +443,8 @@ export default function Home() {
               3ヶ月の伴走期間
             </h3>
             <div className="space-y-2 mb-8">
-              <p className="leading-loose">開講：2026年6月1日</p>
-              <p className="leading-loose">終了：2026年8月31日(予定)</p>
+              <p className="leading-loose">開講：2026年7月1日</p>
+              <p className="leading-loose">終了：2026年9月30日(予定延長の可能性あり、延長料金はいただきません)</p>
             </div>
             <p className="leading-loose">
               3ヶ月の間、動画を見て、ワークをして、質問して、また見直す。
@@ -539,6 +542,100 @@ export default function Home() {
             <p>あるいは、ただ目の前の家族や友人を助けたいだけだとしても。</p>
             <p>自分を導けない人は、人を導けません。</p>
             <p>逆に、自分を導けるようになった人は、その瞬間から、誰かにとっての灯になれます。</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== 社会的証明セクション ==================== */}
+      <section className="px-6 py-24 md:py-32 bg-paper section-fade">
+        <div className="max-w-2xl mx-auto">
+          <p className="number-label mb-6 text-center">— もう一つの証明 —</p>
+          <h2 className="font-serif text-deep text-2xl md:text-3xl font-medium mb-8 leading-relaxed text-center">
+            一人では、
+            <br />
+            たどり着けなかった人たち
+          </h2>
+
+          <p className="leading-loose mb-16 text-center text-ink/70">
+            ここまで読んで、「本当に、私にもできるんだろうか」と感じた方へ。<br />
+            これからお話しするのは、この講座に特典として含まれる「ブロック外しセッション」を、実際に受けた方々の変化です。<br /><br />
+            共通しているのは、たった一つ。<br />
+            みんな、すでに自分と深く向き合ってきた人たちで、<br />
+            それでも"その場所"だけは、一人では見つけられませんでした。
+          </p>
+
+          {/* 事例1 */}
+          <div className="mb-16 border-l-2 border-gold/30 pl-8">
+            <p className="font-serif text-gold tracking-widest text-sm mb-3">Oさん｜40代・サロン経営</p>
+            <h3 className="font-serif text-deep text-xl font-medium mb-6 leading-relaxed">
+              「お金の不安」は、自分のものじゃなかった
+            </h3>
+            <div className="space-y-4 leading-loose text-ink">
+              <p>「とにかく稼がなきゃ」という焦りを抱えて来られたOさん。毎日、お金のことが頭から離れない状態でした。</p>
+              <p>一緒に根っこをたどっていくと、その不安はOさん自身の経験ではなく、親から受け継いだ「お金への恐怖」でした。</p>
+              <p>外したあとOさんは、</p>
+              <p className="font-serif text-deep font-medium">「サロン運営は続くから、お金の心配がゼロになったわけじゃないけど、毎日感じていた"不安"という重りが、なくなった。それが、一番うれしい」</p>
+              <p>と、経営者として行動をやめない精神の強さが戻りました。</p>
+              <p className="font-serif text-deep font-medium">状況は同じなのに、体感が変わる。これが、自己一致の始まりです。</p>
+            </div>
+          </div>
+
+          {/* 事例2 */}
+          <div className="mb-16 border-l-2 border-gold/30 pl-8">
+            <p className="font-serif text-gold tracking-widest text-sm mb-3">Yさん｜40代</p>
+            <h3 className="font-serif text-deep text-xl font-medium mb-6 leading-relaxed">
+              「眠れない」の根っこは、とっくに終わった出来事だった
+            </h3>
+            <div className="space-y-4 leading-loose text-ink">
+              <p>仕事が決まらず、不安で眠れない日が続いていたYさん。根っこをたどると、行き着いたのは中学時代の仲間はずれの経験でした。Yさんの神経系は、もう終わったはずのその出来事に、ずっと「危険信号」を出し続けていたんです。</p>
+              <p>そこを外したその日の夜から、Yさんは、深く眠れるようになりました。</p>
+              <p>心と身体に余白が戻っても、「仕事が見つからない」という不安が、すぐに消えたわけではありません。でも、ここが大事なところです。</p>
+              <p className="font-serif text-deep font-medium">不安を無理に消すのではなく、「感じてもいい」と心から許せたまま、行動を諦めない強さ——本来の自分の力が、戻ってきたんです。</p>
+              <p>そしてある日、仕事が決まり、地に足がついた感覚を取り戻しました。</p>
+            </div>
+          </div>
+
+          <div className="gold-divider"></div>
+
+          <div className="space-y-5 leading-loose my-12">
+            <p>その他、内観歴5年以上のベテランさんや心理学を極めたプロでも、最後のピースが取れないと感じていた方が、ブロック外しをした結果、現在、物凄い成果を出しています。</p>
+          </div>
+
+          {/* 感想スクリーンショット */}
+          <div className="space-y-4 my-12">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/testimonial-1.jpg" alt="セッション感想1" className="w-full rounded-sm border border-line" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/testimonial-2.jpg" alt="セッション感想2" className="w-full rounded-sm border border-line" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/testimonial-3.jpg" alt="セッション感想3" className="w-full rounded-sm border border-line" />
+          </div>
+
+          <div className="text-center mb-12">
+            <a
+              href="https://flax-poultry-53a.notion.site/30c4cc699b08800891c2edc8236c2172"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold underline underline-offset-4 tracking-wide text-sm"
+            >
+              ▼ もっと多くの声はこちら
+            </a>
+          </div>
+
+          <div className="gold-divider"></div>
+
+          <div className="space-y-6 leading-loose">
+            <p>みなさんに共通していたのは、</p>
+            <p className="font-serif text-deep font-medium text-lg">「自分が問題だと思っていた場所」と、「本当の根っこ」が、違っていたこと。</p>
+            <p>そしてその根っこは、どれだけ真剣に内観してきた人でも、一人では見つけられなかった、ということです。</p>
+            <p className="font-serif text-deep font-medium">なぜなら、それは自分の感情や信念ではないものだから。</p>
+            <p>これはスピリチュアルを極めて責任感がある努力家で真面目な人が見落としやすい盲点であり、どの講座でも学べない、ここでしか得られないものです。</p>
+            <p>内観だけでは到達できない領域——まさかの「自分じゃない人生」を生きている根源を特定するのは、曖昧なエネルギーの話ではなく、理論的に伝えているのは私のセッションしかありません。</p>
+          </div>
+
+          <div className="my-12 py-8 border-y border-gold/20 space-y-4 leading-loose">
+            <p>だからこそこの講座では、まず特典のブロック外しセッションでその"最初の根源"に一緒に触れてから、あとは自分で潜り直せる技術を、3ヶ月かけて育てていきます。</p>
+            <p>さらに、世の中ではブロックを外して終わりの場所もありますが、ここではブロックを外した後に自分で自分を導く土台の力をつける——自己一致し続けるまでがセットになっていて、自己啓発迷子を卒業し自立までを見据えています。</p>
           </div>
         </div>
       </section>
@@ -774,7 +871,7 @@ export default function Home() {
               3ヶ月間、私と直接やりとりできる個別チャットサポート付き。
             </p>
             <p className="font-serif text-deep text-lg md:text-xl font-medium leading-relaxed">
-              さらに0期生には、本来3回コースでしか提供していないブロック外しセッションを、1回分組み込みます。
+              さらに、本来3回コースでしか提供していないブロック外しセッションが、1回付いています。
             </p>
           </div>
 
@@ -819,75 +916,55 @@ export default function Home() {
             </div>
           </div>
 
+          {/* セッションで何が起きるのか */}
+          <div className="my-16 space-y-6 leading-loose">
+            <p className="number-label text-center">— セッションでは、何が起きるのか —</p>
+            <div className="space-y-5 mt-8">
+              <p>セッションが始まると、あなたは自分でも気づいていなかった「ブロックの根源」に出会います。</p>
+              <p className="font-serif text-deep font-medium">「え、そこだったの？」と、多くの方がそう言葉を漏らします。</p>
+              <p>そして、その根っこに触れた瞬間、ふっと涙が出ることがあります。悲しいからではありません。ずっと滞っていたもの（エネルギー）が、通ったからです。</p>
+              <p>そして、長年原因不明の自分責めが終わります。</p>
+              <p>「ブロックを外す」と聞くと、自分の何かを変える作業だと思うかもしれません。でも実際は、逆です。</p>
+              <p className="font-serif text-deep font-medium">"本当の原因は、自分じゃなかった"と気づくこと。ここが、他では体験できない部分です。</p>
+              <p>終わる頃には、「なぜ、わかっているのに動けなかったのか」が、頭ではなく身体で腑に落ちている状態になります。</p>
+              <p>この体験を"入口"にして、3ヶ月の講座で「自分で潜り直す技術」を育てていく。<br />だから、いきなり一人で抱え込まなくて、大丈夫です。</p>
+            </div>
+          </div>
+
           <div className="gold-divider"></div>
 
-          {/* 適正価格 */}
+          {/* 通常価格 */}
           <div className="text-center my-16">
             <h3 className="font-serif text-deep text-xl md:text-2xl font-medium mb-8 leading-relaxed">
-              適正価格は、198,000円。
+              通常価格は、298,000円。
             </h3>
             <div className="space-y-4 leading-loose text-left">
-              <p>内容と価値を冷静に見積もれば、</p>
-              <p className="font-serif text-deep font-medium">
-                この講座の適正価格は、本来 198,000円 です。
-              </p>
-              <p>100万円相当の内容を、10万円台に圧縮した時点で、すでに破格です。</p>
+              <p>100万円相当の内容を、約30万円に圧縮した時点で、すでに破格です。</p>
               <p>でも——</p>
             </div>
           </div>
 
           <div className="gold-divider"></div>
 
-          {/* 最終価格 */}
+          {/* 今回の価格 */}
           <div className="text-center py-16">
             <h3 className="font-serif text-deep text-xl md:text-2xl font-medium mb-12 leading-relaxed">
-              0期生のあなたには、
-              <br />
-              この価格でお渡しします。
+              今回は この価格でお渡しします。
             </h3>
             <p className="font-serif font-medium text-deep mb-2" style={{ fontSize: "clamp(48px, 11vw, 88px)" }}>
-              149,000円
+              169,000円
             </p>
             <p className="text-sm text-ink/70 tracking-widest">（税込）</p>
           </div>
 
-          <div className="gold-divider"></div>
-
-          {/* 締切・募集人数 */}
-          <div className="mt-16 mb-8">
-            <div className="text-center border-y-2 border-terracotta/40 py-12 px-6">
-              <p className="number-label mb-6">— 0期生募集締切 —</p>
-              <p className="font-serif font-medium text-deep mb-2" style={{ fontSize: "clamp(28px, 6vw, 44px)" }}>
-                5月31日（日）まで
-              </p>
-              <p className="font-serif text-2xl md:text-3xl font-medium text-terracotta mt-2 mb-8">
-                特別価格 149,000円
-              </p>
-
-              <div className="text-left space-y-4 leading-loose max-w-md mx-auto mb-10">
-                <p className="font-medium text-deep">6月1日以降、2つのことが変わります。</p>
-                <ul className="space-y-3 mt-2">
-                  <li className="flex gap-3">
-                    <span className="text-terracotta flex-shrink-0 mt-1">—</span>
-                    <span className="text-ink">価格が <strong>169,000円</strong> に上がります（20,000円の差）</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-terracotta flex-shrink-0 mt-1">—</span>
-                    <span className="text-ink">「0期生」として、私と一緒に講座を作っていく機会が終了します</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="border-t border-line pt-8 text-left max-w-md mx-auto space-y-3 leading-loose">
-                <p className="font-serif text-deep font-medium">0期生だけの特別価格 149,000円と、</p>
-                <p className="font-serif text-deep font-medium">「仲間として講座を一緒に作る」体験は——</p>
-                <p className="text-terracotta font-medium">5月31日で終わります。</p>
-              </div>
-            </div>
-
-            <p className="text-center text-ink/70 leading-loose mt-8">
-              先着5名。定員に達した時点で、募集を終了します。
+          {/* 受講者の声（引用） */}
+          <div className="border-y border-gold/30 py-10 my-8 space-y-4 text-center">
+            <p className="text-ink/70 text-sm tracking-widest">受講者の声</p>
+            <p className="font-serif text-deep text-lg md:text-xl font-medium leading-relaxed">
+              「もっと早く出会いたかった」<br />
+              「20年抱えていたものが、外れました」
             </p>
+            <p className="text-ink/70 text-sm leading-loose">——これ、特典のブロック外しセッション<em>"だけ"</em>の威力です。</p>
           </div>
         </div>
       </section>
@@ -902,46 +979,31 @@ export default function Home() {
 
           <div className="gold-line-left">
             <div className="space-y-6 leading-loose">
-              <p>正直にお話しします。</p>
-              <p>198,000円が適正だとわかっていて、なぜ149,000円にしたのか。</p>
-              <p>それは、0期生のあなたを——</p>
-            </div>
-
-            <p className="font-serif text-deep text-lg md:text-xl font-medium my-10 leading-relaxed">
-              「お客様」ではなく、「仲間」として迎えたいからです。
-            </p>
-
-            <div className="border-t border-line my-12"></div>
-
-            <div className="space-y-6 leading-loose">
-              <p>この講座は、私にとっても初めての公開講座です。</p>
-              <p>完成された教材を一方的にお渡しする講座では、ありません。</p>
-              <p>動画コンテンツの一部は、0期生の皆さまの質問や歩みに合わせて、講座期間中に追加・更新していきます。</p>
-              <p>あなたが「ここがわからない」と言ってくれた瞬間に、私はそれを動画にして、講座に加えていく。</p>
-              <p>つまりこの講座は——</p>
-            </div>
-
-            <p className="font-serif text-deep text-lg md:text-xl font-medium my-10 leading-relaxed">
-              0期生のあなたと一緒に、
-              <br />
-              私のメソッドを完成させていく場です。
-            </p>
-
-            <div className="border-t border-line my-12"></div>
-
-            <div className="space-y-6 leading-loose">
-              <p>期間は3ヶ月とお約束しますが、必要に応じて延長することもあります。</p>
-              <p>私自身も、やりながら、最善の形を探っていきます。</p>
-              <p>その分、価格は0期生だけの特別価格に設定しました。</p>
-              <p>次期以降は、価格は198,000円に戻る予定です。</p>
+              <p>この講座は、予告なく次回の募集から定価になります。</p>
+              <p className="text-ink/70 text-sm">（今後、定価298,000円も見直しし、値上がりの可能性があります。）</p>
             </div>
 
             <div className="border-t border-line my-12"></div>
 
             <div className="space-y-6 leading-loose">
-              <p>私は、この講座を、私の人生で最も大切なメソッドにしたいと思っています。</p>
-              <p>そのための「最初のメンバー」を、ここで募集します。</p>
-              <p>「完成品」を待つのではなく、「最前線」を一緒に歩いてくれる人を。</p>
+              <p>ばらばらに揃えれば100万円を超える内容を、ひとつの講座にまとめた受講料として——298,000円。</p>
+              <p className="font-serif text-deep font-medium">これが本来の価格であり、学んだあなたが、いつか誰かを導けるほどの内容です。</p>
+            </div>
+
+            <div className="border-t border-line my-12"></div>
+
+            <div className="space-y-6 leading-loose">
+              <p>でも今回は、ずっと私の発信を読み内観を続けて、ここまで自分と向き合ってきて、どう動けばいいのか突破口を真剣に探している人にお届けしたい。</p>
+              <p>価格を理由に、あなたが入口で立ち止まってしまうのは、私の本意ではありません。</p>
+              <p className="font-serif text-deep font-medium">だから今回だけ、特別価格でお渡しします。</p>
+            </div>
+
+            <div className="border-t border-line my-12"></div>
+
+            <div className="space-y-4 leading-loose">
+              <p className="number-label">— 募集について —</p>
+              <p className="font-medium text-deep">募集締切：6月30日（月）まで</p>
+              <p className="text-ink/70 text-sm">※先着5名・定員に達し次第終了</p>
             </div>
           </div>
         </div>
@@ -959,7 +1021,7 @@ export default function Home() {
             {[
               {
                 q: "動画はいつまで見られますか？",
-                a: "3ヶ月の講座期間中は、いつでも何度でも視聴いただけます。終了後の視聴期間については、0期生の皆さまには別途ご案内します。",
+                a: "3ヶ月の講座期間中は、いつでも何度でも視聴いただけます。終了後の視聴期間については、受講した皆さまへ別途ご案内します。（最低1年間は視聴できるように確保します）",
               },
               {
                 q: "個別チャットは、どのくらいの頻度で送っていいですか？",
@@ -1026,31 +1088,37 @@ export default function Home() {
             <p className="font-serif text-deep font-medium">
               「自分の感覚に迷わない、むしろ寄り添える自分」
             </p>
-            <p>として歩いていくあなたを、私は0期生として、全力でサポートします。</p>
-          </div>
-
-          <div className="my-10 text-left border-l-2 border-gold/30 pl-6 space-y-3 leading-loose">
-            <p className="text-ink">
-              読んでみて、まだ迷いや質問がある方は、申し込む前にこちらのメールアドレスにそのままご連絡ください。
-            </p>
-            <p className="text-ink">
-              全てのメールに、私が直接お返事しています。
-            </p>
-            <p className="font-mono text-deep font-medium">info@narui.my</p>
-          </div>
-
-          <div className="inline-block bg-soft text-paper px-16 py-5 rounded-sm font-medium tracking-widest text-lg md:text-xl my-8 cursor-default">
-            満席につき終了
-          </div>
-
-          <div className="text-sm text-ink/80 space-y-2 mt-8">
-            <p>先着5名 / ブロック外しセッション1回分付き / 149,000円（税込）</p>
+            <p>として歩いていくあなたを、私は全力でサポートします。</p>
           </div>
 
           <div className="gold-divider"></div>
 
-          <div className="text-sm text-soft space-y-2 mt-12">
-            <p>ご質問・ご相談はメルマガからの返信または直接こちらへどうぞ</p>
+          <a
+            href="https://forms.gle/A8nJyvuAPepF3cio9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button inline-block bg-terracotta text-paper px-8 py-5 rounded-sm font-medium tracking-wider hover:bg-terracottaDark text-base md:text-lg my-10 leading-relaxed"
+          >
+            まずは個別相談で自分にあっているかを確認する（無料）
+          </a>
+
+          <div className="space-y-4 leading-loose my-8 text-left">
+            <p className="text-ink/70">「自分に合うのか、一度話してみたい」</p>
+            <p className="text-ink/70">「ブロック外しセッションが今の自分に適してるのか相談してみたい」</p>
+            <p className="text-ink">——そんな方のための場です。売り込みはしません。話してみて違うと感じたら、遠慮なく見送って大丈夫です。</p>
+          </div>
+
+          <div className="gold-divider"></div>
+
+          <p className="font-serif text-deep font-medium text-lg my-8">
+            申し込みは6/19からカートオープンです。
+          </p>
+
+          <div className="gold-divider"></div>
+
+          <div className="text-sm text-soft space-y-3 mt-12">
+            <p>その他、小さな疑問がある方はいつでも直接メールで聞いてください。</p>
+            <p>全てのメールに、私が直接お返事しています。</p>
             <p className="font-mono text-ink/80">info@narui.my</p>
           </div>
         </div>
