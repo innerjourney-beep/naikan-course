@@ -1002,10 +1002,26 @@ export default function Home() {
 
             <div className="space-y-4 leading-loose">
               <p className="number-label">— 募集について —</p>
-              <p className="font-medium text-deep">募集締切：6月30日（月）まで</p>
+              <p className="font-medium text-deep">募集締切：6月30日（火）まで</p>
               <p className="text-ink/70 text-sm">※先着5名・定員に達し次第終了</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ==================== 中間CTA ==================== */}
+      <section className="px-6 py-16 bg-deep">
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-paper/70 text-sm tracking-widest mb-6">— ここまで読んだあなたへ —</p>
+          <a
+            href="https://forms.gle/jn3yu82sNcNXJ5m88"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-paper text-deep px-8 py-5 rounded-sm font-medium tracking-wider hover:bg-base text-base md:text-lg leading-relaxed transition-colors"
+          >
+            3か月で本来の完璧で美しい私に還る<br className="md:hidden" />ジャーニーを始める
+          </a>
+          <p className="text-paper/50 text-xs mt-6">※先着5名・定員に達し次第終了</p>
         </div>
       </section>
 
@@ -1110,9 +1126,23 @@ export default function Home() {
 
           <div className="gold-divider"></div>
 
-          <p className="font-serif text-deep font-medium text-lg my-8">
-            申し込みは6/19からカートオープンです。
-          </p>
+          <div className="space-y-5 leading-loose my-10 text-left">
+            <p className="font-serif text-deep font-medium text-lg">そして、もし、ここまで読んで、「相談より、もう始めたい」と心が動いた方へ。</p>
+            <p>その"決めた"という感覚こそ、この講座が一番大切にしているものです。</p>
+            <p>その直感を信じて大丈夫です。</p>
+            <p>申し込んでも、いきなり一人で潜るわけじゃありません。</p>
+            <p>まず私と一対一で、あなたの根っこに触れるところから始めます。</p>
+            <p>繰り返し起こる人生のパターンを解除し、<br />3か月で自分で自分を導く一生物の安心の土台を作りましょう。</p>
+          </div>
+
+          <a
+            href="https://forms.gle/jn3yu82sNcNXJ5m88"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button inline-block bg-deep text-paper px-8 py-5 rounded-sm font-medium tracking-wider hover:opacity-90 text-base md:text-lg my-6 leading-relaxed transition-opacity"
+          >
+            3か月で本来の完璧で美しい私に還るジャーニーを始める
+          </a>
 
           <div className="gold-divider"></div>
 
